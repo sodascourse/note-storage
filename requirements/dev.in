@@ -1,0 +1,5 @@
+-r project.in
+-r test.in
+
+mysqlclient~=1.3.10
+python-dotenv~=0.6
