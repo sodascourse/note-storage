@@ -13,8 +13,8 @@ class NoteQuerySet(models.QuerySet):
 class Note(models.Model):
     uuid = models.UUIDField(unique=True, default=uuid.uuid4, editable=False)
 
-    title = models.TextField()
-    content = models.TextField()
+    title = models.TextField(blank=True)
+    content = models.TextField(blank=True)
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,
                               editable=False)
 
