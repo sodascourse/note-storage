@@ -39,3 +39,10 @@ This is a JSON REST API, so data would be transferred in `application/json` cont
     - `GET`, `PUT`, and `PATCH` - A dictionary which has `modified_time`, `title`, `content`,
                                   and `uuid` of the created note.
     - `DELETE` - N/A
+
+
+## Development
+
+This is a server based on [django](https://www.djangoproject.com) 1.11 and Python 3.6,
+and uses [`pytest`](https://pytest.org) for testing. Also uses [`pip-tools`](https://github.com/jazzband/pip-tools)
+for dependnecy management, see `Makefile` for detail.
